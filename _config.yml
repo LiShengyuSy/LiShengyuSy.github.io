@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "I am pursuing my PhD at UESTC."
   location         : "Chengdu, China"
-  employer         : "University of Electronic Science and Technology of China"
+  employer         : "University of Electronic Science  <br> and Technology of China"
   uri              : # URL
   email            : "lishengyu@std.uestc.edu.cn" 
 
