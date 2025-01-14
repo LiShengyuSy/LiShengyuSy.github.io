@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Shengyu Li / Shengyu Li"
+title                    : "Shengyu Li / 李圣雨"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "I am pursuing my PhD at UESTC."
   location         : "Chengdu, China"
-  employer         : "Red Brick University"
+  employer         : "University of Electronic Science and Technology of China"
   uri              : # URL
   email            : "lishengyu@std.uestc.edu.cn" 
 
