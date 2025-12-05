@@ -26,9 +26,9 @@ author:
   # pronouns         : # example: "she/her"  
   # bio              : "I am pursuing my PhD at UESTC."
   location         : "Hong Kong, China"
-  employer         : "The Hong Kong University of Science and Technology"
+  employer         : "The Hong Kong University of <br> Science and Technology"
   uri              : # URL
-  email            : "lishengyu@ust.hk" 
+  lishengyu@ust.hk : "lishengyu@ust.hk" 
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile
