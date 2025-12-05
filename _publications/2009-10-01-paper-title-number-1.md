@@ -3,7 +3,7 @@ title: "Hedgehog: Pushing the Range Limits of Ultrasonic Microphone Jammers"
 collection: publications
 category: manuscripts
 excerpt: '**Shengyu Li**, Mengchen Teng, Boyu Li, Songfan Li, Xiandong Shao, Chong Zhang, Li Lu'
-date: 2025-11-04
+# date: 2025-11-04
 venue: 'ACM MobiCom 2025'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://dl.acm.org/doi/10.1145/3680207.3723460'
