@@ -1,9 +1,13 @@
 - title: Email
-  url: mailto://vszhub@gmail.com
+  url: mailto://lishengyu@ust.hk
   icon: fas fa-envelope
-- title: Twitter
-  url: https://twitter.com/vszhub
-  icon: fab fa-twitter
-- title: GitHub
-  url: https://github.com/vszhub/not-pure-poole
-  icon: fab fa-github
+- title: GoogleScholar
+  url: https://scholar.google.com/citations?user=DA1ErHAAAAAJ&hl
+  icon: fa-brands fa-google-scholar
+  
+# - title: Twitter
+#   url: https://twitter.com/vszhub
+#   icon: fab fa-twitter
+# - title: GitHub
+#   url: https://github.com/vszhub/not-pure-poole
+#   icon: fab fa-github
