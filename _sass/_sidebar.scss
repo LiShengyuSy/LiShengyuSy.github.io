@@ -13,13 +13,22 @@
   }
 }
 
+// .avatar-image {
+//   width: 40%;
+//   height: auto;
+//   border-radius: 0;
+//   display: block;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
 .avatar-image {
-  width: 40%;
-  height: auto;
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 0;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .masthead-title {
@@ -83,8 +92,18 @@
   }
 }
 
+// @media (max-width: $md-width) {
+//   .avatar-image {
+//     width: 15%;
+//   }
+// }
+
 @media (max-width: $md-width) {
   .avatar-image {
-    width: 15%;
+    width: 40%;         /* 增大幅度，移动端侧边栏通常较窄 */
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0;
   }
 }
+
