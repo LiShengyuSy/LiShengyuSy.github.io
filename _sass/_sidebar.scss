@@ -23,12 +23,13 @@
 // }
 
 .avatar-image {
-  width: 30%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 0;
+  width: 45%;           /* ✅ 从 30% 调大到 45%，整体更醒目 */
+  max-width: 200px;     /* ✅ 避免太大影响排版 */
+  height: auto;
+  border-radius: 50%;   /* ✅ 保持圆形 */
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto;    /* ✅ 上下留白更自然 */
+  object-fit: cover;    /* ✅ 防止图片被拉伸或压缩 */
 }
 
 .masthead-title {
@@ -98,12 +99,12 @@
 //   }
 // }
 
+/* 移动端优化部分 */
 @media (max-width: $md-width) {
   .avatar-image {
-    width: 40%;         /* 增大幅度，移动端侧边栏通常较窄 */
-    aspect-ratio: 1 / 1;
+    width: 60%;         /* ✅ 移动端更大一些 */
+    max-width: 160px;   /* ✅ 限制最大尺寸 */
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 0;
   }
 }
-
