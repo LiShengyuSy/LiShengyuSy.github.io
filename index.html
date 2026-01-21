@@ -8,16 +8,17 @@ title: Home
   max-width: 750px;
   margin: 0 auto;
   padding: 1.5rem 1rem;
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: "Georgia", "Times New Roman", Times, serif;   /* 经典衬线字体 */
   font-size: 1.05rem;
-  line-height: 1.65;
+  line-height: 1.65;              /* 稍紧凑 */
   color: #333;
   text-align: justify;
   text-justify: inter-word;
 }
 
+/* 一级标题（About Me / Conference Papers / Journal Papers） */
 .home-content h2 {
-  text-align: left;
+  text-align: left;               /* 左对齐 */
   font-size: 1.6rem;
   margin-top: 1.2rem;
   margin-bottom: 0.6rem;
@@ -26,50 +27,68 @@ title: Home
   color: #2b2b2b;
 }
 
+/* 段落间距 */
 .home-content p {
   margin-bottom: 0.6rem;
 }
 
+/* 普通超链接样式：莫兰迪绿色 */
 .home-content a {
-  color: #5c8069;
+  color: #5c8069;                 /* 莫兰迪绿 */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .home-content a:hover {
-  color: #7aa87a;
+  color: #7aa87a;                 /* 悬停时稍亮 */
   text-decoration: underline;
 }
 
-/* ✅ 论文列表样式优化：紧凑、每两篇多一点间距 */
+/* ===== 论文列表样式 ===== */
 .paper-list {
   list-style: none;
   padding-left: 0;
   margin-top: 0.6rem;
 }
 
+/* 每篇间距适中，每两篇间距稍大 */
 .paper-list li {
   line-height: 1.45;
   text-align: justify;
   margin-bottom: 0.5rem;
 }
-
 .paper-list li:nth-child(2n) {
-  margin-bottom: 1.2rem; /* ✅ 每两篇之间增加额外间距 */
+  margin-bottom: 1.2rem;          /* 每两篇之间增加额外距离 */
 }
 
-.paper-title {
-  font-weight: 600;
+/* 论文标题标签样式（如 [MobiCom’25]） */
+.paper-label {
+  color: #6B4F3F;                 /* 棕色，类似树干色 */
+  font-weight: 700;
+  margin-right: 6px;
 }
 
+/* 论文标题链接样式（蓝色标题） */
+.paper-title a {
+  color: #2471a3;
+  text-decoration: none;
+}
+.paper-title a:hover {
+  color: #318ac2;
+  text-decoration: underline;
+}
+
+/* 作者与会议信息部分 */
 .paper-meta {
   display: block;
-  font-size: 0.94rem;
+  font-size: 0.95rem;
   color: #555;
-  margin-top: 0.1rem;
+  margin-top: 0.15rem;
+  font-family: "Georgia", "Times New Roman", Times, serif;
 }
 
+/* 自己的名字高亮 */
 .myname {
   font-weight: 700;
   text-decoration: underline;
@@ -80,8 +99,7 @@ title: Home
 
   <h2>About&nbsp;Me</h2>
   <p>
-    I am currently a Postdoctoral Fellow at the
-    Hong Kong University of Science and Technology (HKUST),
+    I am currently a Postdoctoral Fellow at the Hong Kong University of Science and Technology (HKUST),
     working with <a href="https://home.cse.ust.hk/~lim/" target="_blank">Prof. Mo Li</a>.
     I received my Ph.D. in 2025 from the
     University of Electronic Science and Technology of China (UESTC),
@@ -106,91 +124,98 @@ title: Home
 
   <h2>Conference&nbsp;Papers</h2>
 
-  <ul class="paper-list">
+ <ul class="paper-list">
 
-    <li>
-      <span class="paper-title">
-        <a href="#" target="_blank">
-          Go beyond RFID: Rethinking the design of RFID sensor tags for versatile applications
-        </a>
-      </span>
-      <span class="paper-meta">
-        <span class="myname">Shengyu Li</span>, Q. Meng, Y. Bai, C. Zhang, Y. Song, S. Li, L. Lu.  
-        <em>Proceedings of the 29th ACM International Conference on Mobile Computing and Networking (MobiCom)</em>, 2023.
-      </span>
-    </li>
+  <li>
+    <span class="paper-title">
+      <span class="paper-label">[MobiCom’25]</span>
+      <a href="https://dl.acm.org/doi/abs/10.1145/3680207.3723460" target="_blank">
+        Hedgehogs: Pushing the Range Limits of Ultrasonic Microphone Jammers
+      </a>
+    </span>
+    <span class="paper-meta">
+      <span class="myname">Shengyu Li</span>, M. Teng, B. Li, S. Li, X. Shao, C. Zhang, L. Lu.<br>
+      <em>ACM International Conference on Mobile Computing and Networking (MobiCom)</em>, 2025.
+    </span>
+  </li>
+   
+  <li>
+    <span class="paper-title">
+      <span class="paper-label">[MobiCom’23]</span>
+      <a href="#" target="_blank">
+        Go beyond RFID: Rethinking the design of RFID sensor tags for versatile applications
+      </a>
+    </span>
+    <span class="paper-meta">
+      <span class="myname">Shengyu Li</span>, Q. Meng, Y. Bai, C. Zhang, Y. Song, S. Li, L. Lu.<br>
+      <em>ACM International Conference on Mobile Computing and Networking (MobiCom)</em>, 2023.
+    </span>
+  </li>
 
-    <li>
-      <span class="paper-title">
-        <a href="#" target="_blank">
-          Frequency scaling meets intermittency: Optimizing task rate for RFID‑scale computing devices
-        </a>
-      </span>
-      <span class="paper-meta">
-        <span class="myname">Shengyu Li</span>, M. Chen, C. Song, L. Lu.  
-        <em>IEEE Transactions on Mobile Computing (TMC)</em>, 2023, 22(3): 1689‑1700.
-      </span>
-    </li>
+  <li>
+    <span class="paper-title">
+      <span class="paper-label">[TMC’23]</span>
+      <a href="#" target="_blank">
+        Frequency scaling meets intermittency: Optimizing task rate for RFID‑scale computing devices
+      </a>
+    </span>
+    <span class="paper-meta">
+      <span class="myname">Shengyu Li</span>, M. Chen, C. Song, L. Lu.<br>
+      <em>IEEE Transactions on Mobile Computing (TMC)</em>, 2023, 22(3): 1689‑1700.
+    </span>
+  </li>
 
-    <li>
-      <span class="paper-title">
-        <a href="#" target="_blank">
-          Watch out your thumb drive: Covert data theft from portable data storage via backscatter
-        </a>
-      </span>
-      <span class="paper-meta">
-        <span class="myname">Shengyu Li</span>, Q. Liu, Y. Song, C. Zhang, L. Lu.  
-        <em>IEEE Transactions on Dependable and Secure Computing (TDSC)</em>, 2023, 21(4): 2434‑2447.
-      </span>
-    </li>
+  <li>
+    <span class="paper-title">
+      <span class="paper-label">[TDSC’23]</span>
+      <a href="#" target="_blank">
+        Watch out your thumb drive: Covert data theft from portable data storage via backscatter
+      </a>
+    </span>
+    <span class="paper-meta">
+      <span class="myname">Shengyu Li</span>, Q. Liu, Y. Song, C. Zhang, L. Lu.<br>
+      <em>IEEE Transactions on Dependable and Secure Computing (TDSC)</em>, 2023, 21(4): 2434‑2447.
+    </span>
+  </li>
 
-    <li>
-      <span class="paper-title">
-        <a href="#" target="_blank">
-          Rethinking power efficiency for next‑generation processor‑free sensing devices
-        </a>
-      </span>
-      <span class="paper-meta">
-        Y. Song, C. Zhang, <span class="myname">Shengyu Li</span>, L. Lu.  
-        <em>Sensors</em>, 2022, 22(8): 3074.
-      </span>
-    </li>
+  <li>
+    <span class="paper-title">
+      <span class="paper-label">[Sensors’22]</span>
+      <a href="#" target="_blank">
+        Rethinking power efficiency for next‑generation processor‑free sensing devices
+      </a>
+    </span>
+    <span class="paper-meta">
+      Y. Song, C. Zhang, <span class="myname">Shengyu Li</span>, L. Lu.<br>
+      <em>Sensors</em>, 2022, 22(8): 3074.
+    </span>
+  </li>
 
-    <li>
-      <span class="paper-title">
-        <a href="#" target="_blank">
-          Research on Application of Mimic Defense in Industrial Control System Security
-        </a>
-      </span>
-      <span class="paper-meta">
-        W. Dai, <span class="myname">Shengyu Li</span>, L. Lu, Y. Ye, F. Meng, D. Zhang.  
-        <em>Proc. IEEE 2nd International Conference on Information Technology, Big Data and Artificial Intelligence (ICIBA)</em>, 2021.
-      </span>
-    </li>
+  <li>
+    <span class="paper-title">
+      <span class="paper-label">[ICIBA’21]</span>
+      <a href="#" target="_blank">
+        Research on Application of Mimic Defense in Industrial Control System Security
+      </a>
+    </span>
+    <span class="paper-meta">
+      W. Dai, <span class="myname">Shengyu Li</span>, L. Lu, Y. Ye, F. Meng, D. Zhang.<br>
+      <em>IEEE International Conference on Information Technology, Big Data and Artificial Intelligence (ICIBA)</em>, 2021.
+    </span>
+  </li>
 
-    <li>
-      <span class="paper-title">
-        <a href="#" target="_blank">
-          Research on Security Defense System of Industrial Control Network
-        </a>
-      </span>
-      <span class="paper-meta">
-        <span class="myname">Shengyu Li</span>, F. Meng, D. Zhang, Q. Liu, L. Lu, Y. Ye.  
-        <em>Proc. IEEE 2nd International Conference on Information Technology, Big Data and Artificial Intelligence (ICIBA)</em>, 2021.
-      </span>
-    </li>
+  <li>
+    <span class="paper-title">
+      <span class="paper-label">[ICIBA’21]</span>
+      <a href="#" target="_blank">
+        Research on Security Defense System of Industrial Control Network
+      </a>
+    </span>
+    <span class="paper-meta">
+      <span class="myname">Shengyu Li</span>, F. Meng, D. Zhang, Q. Liu, L. Lu, Y. Ye.<br>
+      <em>IEEE International Conference on Information Technology, Big Data and Artificial Intelligence (ICIBA)</em>, 2021.
+    </span>
+  </li>
 
-    <li>
-      <span class="paper-title">
-        <a href="#" target="_blank">
-          Hedgehogs: Pushing the Range Limits of Ultrasonic Microphone Jammers
-        </a>
-      </span>
-      <span class="paper-meta">
-        <span class="myname">Shengyu Li</span>, M. Teng, B. Li, S. Li, X. Shao, C. Zhang, L. Lu.  
-        <em>Proceedings of the 31st ACM International Conference on Mobile Computing and Networking (MobiCom)</em>, 2025.
-      </span>
-    </li>
-
-  </ul>
+</ul>
 </div>
