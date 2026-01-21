@@ -5,20 +5,22 @@ title: Home
 
 <style>
 .home-content {
-  max-width: 750px;
+  max-width: 900px;              /* ✅ 拉宽正文显示范围 */
   margin: 0 auto;
   padding: 1.5rem 1rem;
-  font-family: "Georgia", "Times New Roman", Times, serif;   /* 经典衬线字体 */
+  font-family: "Georgia", "Times New Roman", Times, serif;  
   font-size: 1.05rem;
-  line-height: 1.65;              /* 稍紧凑 */
+  line-height: 1.65;
   color: #333;
   text-align: justify;
   text-justify: inter-word;
+  overflow-wrap: break-word;     /* ✅ 允许单词内换行 */
+  word-break: break-word;        /* ✅ 防止单词撑开 */
 }
 
 /* 一级标题（About Me / Conference Papers / Journal Papers） */
 .home-content h2 {
-  text-align: left;               /* 左对齐 */
+  text-align: left;
   font-size: 1.6rem;
   margin-top: 1.2rem;
   margin-bottom: 0.6rem;
@@ -34,14 +36,14 @@ title: Home
 
 /* 普通超链接样式：莫兰迪绿色 */
 .home-content a {
-  color: #5c8069;                 /* 莫兰迪绿 */
+  color: #5c8069;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .home-content a:hover {
-  color: #7aa87a;                 /* 悬停时稍亮 */
+  color: #7aa87a;
   text-decoration: underline;
 }
 
@@ -64,7 +66,7 @@ title: Home
 
 /* 论文标题标签样式（如 [MobiCom’25]） */
 .paper-label {
-  color: #6B4F3F;                 /* 棕色，类似树干色 */
+  color: #6B4F3F;                 /* ✅ 树干棕色 */
   font-weight: 700;
   margin-right: 6px;
 }
@@ -106,7 +108,7 @@ title: Home
     under the supervision of
     <a href="https://www.scse.uestc.edu.cn/info/1081/12001.htm" target="_blank">Prof. Li Lu</a>.
     Earlier, I obtained my B.E. degree in 2019 from the
-    <a href="https://www.xupt.edu.cn/" target="_blank">Xi’an University of Posts and Telecommunications (XUPT)</a>.
+    Xi’an University of Posts and Telecommunications (XUPT).
   </p>
 
   <p>
