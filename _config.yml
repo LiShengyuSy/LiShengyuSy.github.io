@@ -1,7 +1,7 @@
 # Setup
 title: Shengyu Li
-description: |
-  Post-doctoral Fellow
+description: >
+  Post-doctoral Fellow <br>
   The Hong Kong University of Science and Technology
 url: https://vszhub.github.io
 avatar: /Shengyu Li.jpg
@@ -57,5 +57,5 @@ sass:
 # Specify the author for blog posts
 author:
   name: Shengyu Li
-  url: https://github.com/vszhub/
+  url: https://lishengyusy.github.io/
   email: lishengyu@ust.hk
