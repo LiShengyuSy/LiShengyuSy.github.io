@@ -5,15 +5,14 @@ title: Home
 
 <style>
 .home-content {
-  max-width: 900px;              /* ✅ 拉宽正文显示范围 */
+  max-width: 750px;              /* ✅ 调窄宽度，与论文列表对齐 */
   margin: 0 auto;
   padding: 1.5rem 1rem;
-  font-family: "Georgia", "Times New Roman", Times, serif;  
+  font-family: "Georgia", "Times New Roman", Times, serif;
   font-size: 1.05rem;
-  line-height: 1.65;
+  line-height: 1.7;
   color: #333;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;              /* ✅ 改为左对齐，避免大空格 */
   overflow-wrap: break-word;     /* ✅ 允许单词内换行 */
   word-break: break-word;        /* ✅ 防止单词撑开 */
 }
@@ -56,12 +55,13 @@ title: Home
 
 /* 每篇间距适中，每两篇间距稍大 */
 .paper-list li {
-  line-height: 1.45;
-  text-align: justify;
-  margin-bottom: 0.5rem;
+  line-height: 1.55;
+  text-align: left;              /* ✅ 与上部保持一致 */
+  margin-bottom: 0.6rem;
 }
+
 .paper-list li:nth-child(2n) {
-  margin-bottom: 1.2rem;          /* 每两篇之间增加额外距离 */
+  margin-bottom: 1.1rem;         /* 每两篇之间稍大间距 */
 }
 
 /* 论文标题标签样式（如 [MobiCom’25]） */
@@ -76,6 +76,7 @@ title: Home
   color: #2471a3;
   text-decoration: none;
 }
+
 .paper-title a:hover {
   color: #318ac2;
   text-decoration: underline;
@@ -96,6 +97,7 @@ title: Home
   text-decoration: underline;
 }
 </style>
+
 
 <div class="home-content">
 
