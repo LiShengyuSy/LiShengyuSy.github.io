@@ -13,14 +13,17 @@ title: Home
   line-height: 1.75;
   color: #333;
 
-  /* ✅ 两端对齐 & 自动断行 */
+  /* ✅ 两端对齐与自动断行 */
   text-align: justify;
-  text-justify: inter-word;
-
-  overflow-wrap: break-word;     /* ✅ 超长单词内换行 */
-  word-break: break-word;        /* ✅ 防止文字溢出 */
-  white-space: normal;           /* ✅ 允许段内正常换行 */
-  hyphens: auto;                 /* ✅ 英文单词自动使用连字符断行 */
+  text-justify: inter-word;      
+  -webkit-hyphens: auto;         /* ✅ 允许自动连字符断行（Safari/Chrome） */
+  -moz-hyphens: auto;            /* ✅ Firefox */
+  hyphens: auto;                 /* ✅ 英文自动断字 */
+  overflow-wrap: break-word;     
+  word-break: break-word;
+  white-space: normal;           
+  letter-spacing: 0.01em;        /* 微调字距 */
+  word-spacing: 0.05em;          /* 微调词距 */
 }
 
 /* 一级标题（About Me / Conference Papers / Journal Papers） */
@@ -58,21 +61,25 @@ title: Home
 }
 .paper-list li {
   line-height: 1.55;
-  text-align: justify;           /* ✅ 列表同样两端对齐 */
+  text-align: justify;           
   text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
   overflow-wrap: break-word;
   word-break: break-word;
   white-space: normal;
-  hyphens: auto;
   margin-bottom: 0.6rem;
 }
+
+/* 每两篇之间稍大间距 */
 .paper-list li:nth-child(2n) {
   margin-bottom: 1.1rem;
 }
 
 /* 论文标签样式（如 [MobiCom’25]） */
 .paper-label {
-  color: #6B4F3F;                 /* 树干棕色 */
+  color: #6B4F3F;                 
   font-weight: 700;
   margin-right: 6px;
 }
@@ -96,13 +103,12 @@ title: Home
   font-family: "Georgia", "Times New Roman", Times, serif;
 }
 
-/* 名字高亮 */
+/* 自己的名字高亮 */
 .myname {
   font-weight: 700;
   text-decoration: underline;
 }
 </style>
-
 
 <div class="home-content">
 
