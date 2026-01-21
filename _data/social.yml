@@ -1,6 +1,11 @@
 - title: Email
   url: mailto://lishengyu@ust.hk
   icon: fas fa-envelope
+- title: Google Scholar
+  url: https://scholar.google.com/citations?user=DA1ErHAAAAAJ&hl
+  icon: fas fa-graduation-cap
+  
+#升级到Font Awesome6才支持：
 - title: GoogleScholar
   url: https://scholar.google.com/citations?user=DA1ErHAAAAAJ&hl
   icon: fa-brands fa-google-scholar
