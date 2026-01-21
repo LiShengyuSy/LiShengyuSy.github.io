@@ -7,32 +7,29 @@ title: Home
 .home-content {
   max-width: 750px;
   margin: 0 auto;
-  padding: 1.5rem 1rem;   /* ✅ 缩小整体内边距 */
+  padding: 1.5rem 1rem;
   font-family: "Georgia", "Times New Roman", Times, serif;
   font-size: 1.05rem;
-  line-height: 1.65;      /* ✅ 原来1.8太松，这里更紧凑 */
+  line-height: 1.65;
   color: #333;
   text-align: justify;
   text-justify: inter-word;
 }
 
-/* ✅ 标题更紧凑，层级一致左对齐 */
 .home-content h2 {
   text-align: left;
-  font-size: 1.6rem;      /* 稍微减小字号 */
-  margin-top: 1.2rem;     /* 减少标题上方空白 */
-  margin-bottom: 0.6rem;  /* 减少标题下方空白 */
+  font-size: 1.6rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
   border-bottom: none;
   font-weight: 700;
   color: #2b2b2b;
 }
 
-/* ✅ 段落稍微压缩 */
 .home-content p {
   margin-bottom: 0.6rem;
 }
 
-/* ✅ 链接莫兰迪绿 */
 .home-content a {
   color: #5c8069;
   text-decoration: none;
@@ -45,17 +42,21 @@ title: Home
   text-decoration: underline;
 }
 
-/* ✅ 紧凑的论文列表样式 */
+/* ✅ 论文列表样式优化：紧凑、每两篇多一点间距 */
 .paper-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 0.6rem;  /* 列表与标题间距 */
+  margin-top: 0.6rem;
 }
 
 .paper-list li {
-  margin-bottom: 0.5rem;  /* 每篇论文间距缩短 */
-  line-height: 1.45;      /* 行距略小 */
+  line-height: 1.45;
   text-align: justify;
+  margin-bottom: 0.5rem;
+}
+
+.paper-list li:nth-child(2n) {
+  margin-bottom: 1.2rem; /* ✅ 每两篇之间增加额外间距 */
 }
 
 .paper-title {
@@ -66,20 +67,24 @@ title: Home
   display: block;
   font-size: 0.94rem;
   color: #555;
-  margin-top: 0.1rem;     /* 元信息更靠近标题 */
+  margin-top: 0.1rem;
+}
+
+.myname {
+  font-weight: 700;
+  text-decoration: underline;
 }
 </style>
-
 
 <div class="home-content">
 
   <h2>About&nbsp;Me</h2>
   <p>
     I am currently a Postdoctoral Fellow at the
-    <a href="https://hkust.edu.hk" target="_blank">Hong Kong University of Science and Technology (HKUST)</a>,
+    Hong Kong University of Science and Technology (HKUST),
     working with <a href="https://home.cse.ust.hk/~lim/" target="_blank">Prof. Mo Li</a>.
     I received my Ph.D. in 2025 from the
-    <a href="https://en.uestc.edu.cn/" target="_blank">University of Electronic Science and Technology of China (UESTC)</a>,
+    University of Electronic Science and Technology of China (UESTC),
     under the supervision of
     <a href="https://www.scse.uestc.edu.cn/info/1081/12001.htm" target="_blank">Prof. Li Lu</a>.
     Earlier, I obtained my B.E. degree in 2019 from the
@@ -102,6 +107,7 @@ title: Home
   <h2>Conference&nbsp;Papers</h2>
 
   <ul class="paper-list">
+
     <li>
       <span class="paper-title">
         <a href="#" target="_blank">
@@ -109,7 +115,7 @@ title: Home
         </a>
       </span>
       <span class="paper-meta">
-        S.&nbsp;Li, Q.&nbsp;Meng, Y.&nbsp;Bai, C.&nbsp;Zhang, Y.&nbsp;Song, S.&nbsp;Li, L.&nbsp;Lu.  
+        <span class="myname">Shengyu Li</span>, Q. Meng, Y. Bai, C. Zhang, Y. Song, S. Li, L. Lu.  
         <em>Proceedings of the 29th ACM International Conference on Mobile Computing and Networking (MobiCom)</em>, 2023.
       </span>
     </li>
@@ -121,7 +127,7 @@ title: Home
         </a>
       </span>
       <span class="paper-meta">
-        S.&nbsp;Li, M.&nbsp;Chen, C.&nbsp;Song, L.&nbsp;Lu.  
+        <span class="myname">Shengyu Li</span>, M. Chen, C. Song, L. Lu.  
         <em>IEEE Transactions on Mobile Computing (TMC)</em>, 2023, 22(3): 1689‑1700.
       </span>
     </li>
@@ -133,7 +139,7 @@ title: Home
         </a>
       </span>
       <span class="paper-meta">
-        S.&nbsp;Li, Q.&nbsp;Liu, Y.&nbsp;Song, C.&nbsp;Zhang, L.&nbsp;Lu.  
+        <span class="myname">Shengyu Li</span>, Q. Liu, Y. Song, C. Zhang, L. Lu.  
         <em>IEEE Transactions on Dependable and Secure Computing (TDSC)</em>, 2023, 21(4): 2434‑2447.
       </span>
     </li>
@@ -145,7 +151,7 @@ title: Home
         </a>
       </span>
       <span class="paper-meta">
-        Y.&nbsp;Song, C.&nbsp;Zhang, S.&nbsp;Li, L.&nbsp;Lu.  
+        Y. Song, C. Zhang, <span class="myname">Shengyu Li</span>, L. Lu.  
         <em>Sensors</em>, 2022, 22(8): 3074.
       </span>
     </li>
@@ -157,7 +163,7 @@ title: Home
         </a>
       </span>
       <span class="paper-meta">
-        W.&nbsp;Dai, S.&nbsp;Li, L.&nbsp;Lu, Y.&nbsp;Ye, F.&nbsp;Meng, D.&nbsp;Zhang.  
+        W. Dai, <span class="myname">Shengyu Li</span>, L. Lu, Y. Ye, F. Meng, D. Zhang.  
         <em>Proc. IEEE 2nd International Conference on Information Technology, Big Data and Artificial Intelligence (ICIBA)</em>, 2021.
       </span>
     </li>
@@ -169,7 +175,7 @@ title: Home
         </a>
       </span>
       <span class="paper-meta">
-        S.&nbsp;Li, F.&nbsp;Meng, D.&nbsp;Zhang, Q.&nbsp;Liu, L.&nbsp;Lu, Y.&nbsp;Ye.  
+        <span class="myname">Shengyu Li</span>, F. Meng, D. Zhang, Q. Liu, L. Lu, Y. Ye.  
         <em>Proc. IEEE 2nd International Conference on Information Technology, Big Data and Artificial Intelligence (ICIBA)</em>, 2021.
       </span>
     </li>
@@ -181,10 +187,10 @@ title: Home
         </a>
       </span>
       <span class="paper-meta">
-        S.&nbsp;Li, M.&nbsp;Teng, B.&nbsp;Li, S.&nbsp;Li, X.&nbsp;Shao, C.&nbsp;Zhang, L.&nbsp;Lu.  
+        <span class="myname">Shengyu Li</span>, M. Teng, B. Li, S. Li, X. Shao, C. Zhang, L. Lu.  
         <em>Proceedings of the 31st ACM International Conference on Mobile Computing and Networking (MobiCom)</em>, 2025.
       </span>
     </li>
-  </ul>
 
+  </ul>
 </div>
