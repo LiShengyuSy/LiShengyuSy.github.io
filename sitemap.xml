@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+
+<url>
+ <loc>mailto:lishengyu@ust.hk</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://scholar.google.com/citations?user=DA1ErHAAAAAJ&amp;hl</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://home.cse.ust.hk/~lim/</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://www.scse.uestc.edu.cn/info/1081/12001.htm</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://dl.acm.org/doi/abs/10.1145/3680207.3723460</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://ieeexplore.ieee.org/abstract/document/10226556</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://dl.acm.org/doi/abs/10.1145/3570361.3613284</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://ieeexplore.ieee.org/abstract/document/10025852</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://ieeexplore.ieee.org/abstract/document/9687994/</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://ieeexplore.ieee.org/abstract/document/9688212</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://jekyllrb.com/</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://github.com/vszhub/not-pure-poole</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://lishengyusy.github.io/</loc>
+ <priority>0.6</priority>
+ <lastmod>2026-01-21</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+</urlset>
