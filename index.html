@@ -10,23 +10,31 @@ title: Home
   padding: 2rem 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #333;
+  text-align: justify;      /* ✅ 两端对齐 */
+  text-justify: inter-word; /* ✅ 英文单词两端对齐更自然 */
 }
+
 .home-content h2 {
-  font-size: 1.6rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 0.3rem;
+  text-align: center;       /* ✅ 居中显示标题 */
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: none;      /* ✅ 去掉下划线，视觉更干净 */
+  font-weight: 700;
+  color: #222;
 }
+
 .home-content p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
+
 .home-content a {
   color: #1a73e8;
   text-decoration: none;
 }
+
 .home-content a:hover {
   text-decoration: underline;
 }
@@ -37,29 +45,29 @@ title: Home
   <h2>About&nbsp;Me</h2>
 
   <p>
-    I am currently a Postdoctoral Fellow at the Hong Kong University of Science and Technology (HKUST),
-    working with <a href="https://cse.hkust.edu.hk/admin/people/faculty/profile/lim" target="_blank">Prof. Mo Li</a>. I received my Ph.D. in 2025 from 
-    the University of Electronic Science and Technology of China (UESTC), under the supervision of 
-    <a href="https://www.scse.uestc.edu.cn/info/1081/12001.htm" target="_blank">Prof. Li Lu</a>. Earlier, I obtained my B.E. degree in 2019 from 
-    the Xi’an University of Posts and Telecommunications (XUPT).
+    I am currently a Postdoctoral Fellow at the 
+    <a href="https://hkust.edu.hk" target="_blank">Hong Kong University of Science and Technology (HKUST)</a>,
+    working with <a href="https://home.cse.ust.hk/~lim/" target="_blank">Prof. Mo Li</a>. 
+    I received my Ph.D. in 2025 from the 
+    <a href="https://en.uestc.edu.cn/" target="_blank">University of Electronic Science and Technology of China (UESTC)</a>,
+    under the supervision of 
+    <a href="https://www.scse.uestc.edu.cn/info/1081/12001.htm" target="_blank">Prof. Li Lu</a>. 
+    Earlier, I obtained my B.E. degree in 2019 from the 
+    <a href="https://www.xupt.edu.cn/" target="_blank">Xi’an University of Posts and Telecommunications (XUPT)</a>.
   </p>
 
   <p>
-    My research interests lie in <strong>system security</strong>, <strong>wireless and physical‑layer security</strong>, and <strong>acoustic security</strong>.  
-    I have actively participated in several key and general projects funded by the National Natural Science Foundation of China (NSFC), 
-    achieving notable outcomes in domains such as <em>physical‑layer threat detection</em>, 
-    <em>wireless bus architectures</em>, and <em>IoT security</em>.  
-    As the first or primary author, I have published seven papers at leading venues including 
-    <strong>ACM MobiCom</strong> and <strong>IEEE TDSC</strong>, and am currently applying for three national invention patents.
-    Through extensive research experience in system design and security, I emphasize a balance between theory and practice, 
-    aspiring to address real‑world system security challenges with innovative solutions.
-  </p>
-
-  <p>
-    My ongoing research focuses on <strong>intelligent localization and sensing using wireless signals</strong>.  
-    By leveraging ambient signals—including various radio frequencies (e.g., Wi‑Fi, millimeter wave) and acoustic waves—I develop methods to perceive and interpret environmental dynamics.  
-    I explore the evolution of IoT technologies, particularly Wi‑Fi, Bluetooth, and LoRaWAN, 
-    to meet practical industrial needs, emphasizing robust network reliability and optimized Quality of Service (QoS).
+    My research focuses on the security and reliability of modern wireless and acoustic systems. 
+    I am interested in understanding how signals can be both exploited and protected 
+    in the physical layer, and in building systems that remain robust when faced with 
+    real‑world channel dynamics and adversarial interference.  
+    
+    More specifically, my work explores system security, wireless and physical‑layer security, and 
+    acoustic security. I study how information is transmitted over the air—from RF to ultrasonic bands—
+    and how vulnerabilities can emerge in these processes.  
+    By combining signal processing, wireless communication, and system design,  
+    I develop methods for <em>secure wireless communication</em>,
+    <em>cross‑layer sensing</em>, and <em>signal‑based threat detection</em>.
   </p>
 
 </div>
