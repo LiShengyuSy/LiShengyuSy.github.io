@@ -5,19 +5,22 @@ title: Home
 
 <style>
 .home-content {
-  max-width: 820px;              /* ✅ 略微拉宽内容区，使行数自然 */
+  max-width: 820px;              /* 控制整体宽度 */
   margin: 0 auto;
   padding: 1.5rem 1rem;
   font-family: "Georgia", "Times New Roman", Times, serif;
   font-size: 1.05rem;
   line-height: 1.75;
   color: #333;
-  text-align: left;              /* ✅ 左对齐，避免大空格 */
-  letter-spacing: 0.01em;        /* ✅ 微调字距，视觉更柔和 */
-  word-spacing: 0.08em;          /* ✅ 微调词距 */
-  hyphens: auto;                 /* ✅ 允许英文单词自动连词断行 */
-  overflow-wrap: break-word;     /* ✅ 自动换行 */
-  word-break: break-word;
+
+  /* ✅ 两端对齐 & 自动断行 */
+  text-align: justify;
+  text-justify: inter-word;
+
+  overflow-wrap: break-word;     /* ✅ 超长单词内换行 */
+  word-break: break-word;        /* ✅ 防止文字溢出 */
+  white-space: normal;           /* ✅ 允许段内正常换行 */
+  hyphens: auto;                 /* ✅ 英文单词自动使用连字符断行 */
 }
 
 /* 一级标题（About Me / Conference Papers / Journal Papers） */
@@ -42,7 +45,6 @@ title: Home
   font-weight: 500;
   transition: color 0.2s ease;
 }
-
 .home-content a:hover {
   color: #7aa87a;
   text-decoration: underline;
@@ -54,20 +56,23 @@ title: Home
   padding-left: 0;
   margin-top: 0.8rem;
 }
-
 .paper-list li {
   line-height: 1.55;
-  text-align: left;
+  text-align: justify;           /* ✅ 列表同样两端对齐 */
+  text-justify: inter-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  hyphens: auto;
   margin-bottom: 0.6rem;
 }
-
 .paper-list li:nth-child(2n) {
   margin-bottom: 1.1rem;
 }
 
 /* 论文标签样式（如 [MobiCom’25]） */
 .paper-label {
-  color: #6B4F3F;                 /* ✅ 树干棕色 */
+  color: #6B4F3F;                 /* 树干棕色 */
   font-weight: 700;
   margin-right: 6px;
 }
@@ -77,7 +82,6 @@ title: Home
   color: #2471a3;
   text-decoration: none;
 }
-
 .paper-title a:hover {
   color: #318ac2;
   text-decoration: underline;
