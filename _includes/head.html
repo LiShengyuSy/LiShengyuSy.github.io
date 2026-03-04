@@ -2,21 +2,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Styles -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
   <link rel="stylesheet" href="{{ 'assets/styles.css' | relative_url }}">
 
-  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="{{ '_includes/Hong_Kong_University_of_Science_and_Technology_symbol.svg' | relative_url }}">
 
-  <!-- Page title (critical for "Shengyu Li" queries) -->
+  <!-- Page title shown in browser tab and often used by Google -->
   <title>{{ page.title | default: site.title }}</title>
 
-  <!-- Canonical: keep one authoritative URL for your homepage -->
+  <!-- Canonical URL: keep one authoritative homepage URL -->
   <link rel="canonical" href="https://lishengyusy.github.io/" />
 
-  <!-- Structured data: ProfilePage + Person -->
+  <!-- Structured data: helps Google disambiguate "Shengyu Li" -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -26,7 +24,7 @@
     "mainEntity": {
       "@type": "Person",
       "name": "Shengyu Li",
-      "alternateName": ["李胜宇"],
+      "alternateName": ["李圣雨"],
       "affiliation": {
         "@type": "Organization",
         "name": "The Hong Kong University of Science and Technology",
@@ -34,6 +32,7 @@
       },
       "email": "mailto:lishengyu@ust.hk",
       "sameAs": [
+        "https://scholar.google.com/citations?user=DA1ErHAAAAAJ",
         "https://github.com/lishengyusy"
       ]
     }
@@ -42,5 +41,6 @@
 
   {%- seo -%}
   {%- feed_meta -%}
+
   {%- include custom-head.html -%}
 </head>
